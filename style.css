@@ -1,0 +1,68 @@
+/* Mobile First 기본 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 화면 상단에 배치 */
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.weather-app {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* 모바일 크기 최적화 */
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+#searchBtn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#searchBtn:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.temperature {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
